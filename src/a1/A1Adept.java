@@ -19,11 +19,16 @@ public class A1Adept {
 			itemPrices[i] = scan.nextDouble();
 		}
 		
+		for(int i = 0; i < totalItems; i++) {
+			System.out.println(items[i] + " " + itemPrices[i]);
+		}
+		
 		int totalCustomers = scan.nextInt();
 		
-		for(int i = 0; i < totalCustomers; i++) {
+		for (int i = 0; i < totalCustomers; i++) {
 			
 		}
+		
 		
 		
 	}
