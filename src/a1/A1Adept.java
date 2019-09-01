@@ -11,7 +11,7 @@ public class A1Adept {
 		
 		// Found solution to showing '12.50' rather than '12.5' here:
 		// https://www.mkyong.com/java/java-display-double-in-2-decimal-points/
-		DecimalFormat dFormat = new DecimalFormat("#.00");
+		DecimalFormat dFormat = new DecimalFormat("#0.00");
 		
 		// Your code follows here.
 		

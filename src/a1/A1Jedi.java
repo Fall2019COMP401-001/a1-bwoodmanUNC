@@ -18,19 +18,18 @@ public class A1Jedi {
 		int totalCustomers = scan.nextInt();
 		
 		for (int i = 0; i < totalCustomers; i++) {
-			scan.next();
-			scan.next();
+			String customerName = scan.next() + " " + scan.next();
 			int totalProducts = scan.nextInt();
 			for (int j = 0; j < totalProducts; j++) {
 				int quantity = scan.nextInt();
 				String productName = scan.next();
 				for (int f = 0; f < totalItems; f++) {
 					if (productName.equals(items[f].getName())) {
-						items[f].updateTotalCustomers(1);
 						items[f].updateQuantity(quantity);
+						items[f].updateTotalCustomers(customerName);
 					}
-						
 				}
+				
 			}
 		}
 		

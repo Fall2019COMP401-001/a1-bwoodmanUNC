@@ -1,20 +1,22 @@
 package a1;
+import java.util.List;
+import java.util.ArrayList;
 
 public class ProductJedi {
 	private String name;
 	private double price;
-	private int customers;
 	private int quantity;
+	private List<String> customers;
 	
 	public ProductJedi(String name, double price) {
 		this.name = name;
 		this.price = price;
-		this.customers = 0;
+		this.customers = new ArrayList<String>();
 		this.quantity = 0;
 	}
 	
 	public int getTotalCustomers() {
-		return customers;
+		return customers.size();
 	}
 
 	public String getName() {
@@ -29,7 +31,8 @@ public class ProductJedi {
 		this.quantity += quantity;
 	}
 	
-	public void updateTotalCustomers(int customers) {
-		this.customers += customers;
+	public void updateTotalCustomers(String customerName) {
+		if (!customers.contains(customerName))
+			this.customers.add(customerName);
 	}
 }

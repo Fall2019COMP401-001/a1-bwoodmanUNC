@@ -16,7 +16,7 @@ public class A1Novice {
 
 		// Found solution to showing '12.50' rather than '12.5' here:
 		// https://www.mkyong.com/java/java-display-double-in-2-decimal-points/
-		DecimalFormat dFormat = new DecimalFormat("#.00");
+		DecimalFormat dFormat = new DecimalFormat("#0.00");
 
 		String[] firstNames = new String[totalCustomers];
 		String[] lastNames = new String[totalCustomers];
